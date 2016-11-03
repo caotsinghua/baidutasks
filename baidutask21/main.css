@@ -1,0 +1,17 @@
+.tag-area {
+  width: 100%; }
+  .tag, .hobby {
+    display: inline-block;
+    height: 60px;
+    width: 80px;
+    line-height: 60px;
+    background: #3ED8BA;
+    transition: 0.3s;
+    color: #fff;
+    margin: 0px 5px 5px 0px;
+    font-size: 20px;
+    text-align: center; }
+    .tag:hover, .hobby:hover {
+      background: red; }
+
+/*# sourceMappingURL=main.css.map */

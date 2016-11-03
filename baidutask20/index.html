@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>index</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" media="screen,projection">
+	<link rel="stylesheet" type="text/css" href="../css/materialize.min.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="nav-wrapper">
+				<form class="input-field">
+					<input type="search" id="search">
+					<label for="search">
+						<i class="material-icons">search</i>
+					</label>
+					<i class="material-icons">close</i>
+				</form>
+				<a class="btn" id="item-search">查找</a>
+			</div>
+		</nav>
+	</header>
+<main>
+	<div class="container">
+		<div class="input-field">
+			<textarea id="input-text" class="materialize-textarea"></textarea>
+			<label for="input-text">textarea</label>
+		</div>
+		<a class="btn waves-effect" id="item_add">添加</a>
+		<a class="btn waves-effect" id="item_delete">删除</a>
+		<div class="items row" id="items"></div>
+	</div>
+	
+
+</main>
+	
+	<script type="text/javascript" src="../jQuery/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="../js/materialize.min.js"></script>
+	<script type="text/javascript">
+	var newitem;
+		function createItem(html){
+			newitem=document.createElement("div");
+			newitem.className="col s1 item";
+			newitem.innerHTML=html;
+			return $(newitem);
+		}
+		$("#item_add").click(function(){
+			createItem($("#input-text").val());
+			var $theItem=$(newitem)
+			$("#items").append($theItem);
+			$("#input-text").text("");
+		})
+		$("#item_delete").click(function(){
+			$("#items").children(":last").remove();
+		})
+
+		$("#item-search").click(function(){
+			var searchText=document.getElementById("search").value;
+			
+			var itemsArray=document.getElementById("items").childNodes;
+			for(var i=0;i<itemsArray.length;i++){
+				itemsArray[i].className="col s1 item";
+				if(itemsArray[i].innerHTML==searchText){
+					itemsArray[i].className="col s1 item item-checked";
+				}
+			}
+		}
+			
+				
+		)
+	</script>
+</body>
+</html>

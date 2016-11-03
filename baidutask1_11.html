@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>web</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./css/materialize.min.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<style type="text/css">
+
+		body{
+			font-family: 'microsoft yahei'
+		}
+		main{
+			margin-top: 0px;
+		}
+		.tabs .tab a{
+			color: #000;
+		}
+		.biaoqians{
+			padding-top: 10px;
+		}
+		.biaoqians .circle{
+			width: 50px;
+			height: 50px;
+			margin: 0 auto;
+			background:#5AE8F0;
+			padding-top: 10px;
+		}
+		.biaoqians .circle i{
+			font-size: 30px;
+		}
+		.fenlan .col{
+			padding: 10px;
+			border-right: 1px solid #ccc;
+		}
+		.fenlan .col a{
+			color: #000;
+				}
+		.fenlan .col a img{
+			width: 60%;
+			height: 60%;
+			margin-left: 20%;
+		}
+		
+		
+	</style>
+</head>
+<body >
+	<header>
+		<nav>
+			<div class="nav-wrapper  cyan lighten-3">
+				<div class="row">
+					
+					<a href="#!" class="white-text"><i class="left"><</i>返回</a>
+					
+					<a href="#!" class="brand-logo center">这是标题</a>
+				</div>
+			</div>
+		</nav>
+		
+			<div class="col s12">
+				<ul class="tabs">
+					<li class="tab"><a href="">导航</a></li>
+					<li class="tab"><a href="">导航</a></li>
+					<li class="tab"><a href="">导航</a></li>
+					<li class="tab"><a href="">导航</a></li>
+					<li class="tab"><a href="">导航</a></li>
+				</ul>
+			</div>
+			
+	</header>
+	<main>
+		<div class="carousel carousel-slider">
+			<a href="#!" class="carousel-item"><img src="./imgs/food1.jpg" alt="img"></a>
+			<a href="#!" class="carousel-item"><img src="./imgs/food2.jpg" alt="img"></a>
+			<a href="#!" class="carousel-item"><img src="./imgs/food3.jpg" alt="img"></a>
+		</div>
+
+		<div class="biaoqians row">
+			
+				<div class="center col s3"><a href="#!">
+				<div class="circle">
+				<i class="material-icons white-text">assignment</i></div>
+				标签</a></div>
+				<div class="center col s3"><a href="#!">
+				<div class="circle">
+				<i class="material-icons white-text">assignment</i></div>
+				标签</a></div>
+				<div class="center col s3"><a href="#!">
+				<div class="circle">
+				<i class="material-icons white-text">assignment</i></div>
+				标签</a></div>
+				<div class="center col s3"><a href="#!">
+				<div class="circle">
+				<i class="material-icons white-text">assignment</i></div>
+				标签</a></div>
+				
+			</div>
+			
+			<div class="divider"></div>
+			<div class="row fenlan card">
+				<div class="col s4"><a href="#!" class="center"><img src="./imgs/img1.jpg"><h5>分栏一</h5>
+				<h6>分栏小标题</h6></a></div>
+				<div class="col s4"><a href="#!" class="center"><img src="./imgs/img1.jpg"><h5>分栏一</h5>
+				<h6>分栏小标题</h6></a></div>
+				<div class="col s4"><a href="#!" class="center"><img src="./imgs/img1.jpg"><h5>分栏一</h5>
+				<h6>分栏小标题</h6></a></div>
+			</div>
+	</main>
+	<script type="text/javascript" src="../jQuery/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="./js/materialize.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			// $("ul.tabs").tabs();
+			 $('.carousel.carousel-slider').carousel({
+			 	full_width:true,
+			 	padding:0
+			 });
+		})
+	</script>
+</body>
+</html>

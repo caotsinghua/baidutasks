@@ -1,0 +1,22 @@
+.tag-area{
+	width: 100%;
+	@at-root .tag{
+		display: inline-block;
+		height: 60px;
+		width: 80px;
+		line-height: 60px;
+		background: #3ED8BA;
+		transition: 0.3s;
+		color:#fff;
+		margin:0px 5px 5px 0px;
+		font-size: 20px;
+		text-align: center;
+		&:hover{
+		background:red;
+	}
+	}
+	
+}
+.hobby{
+	@extend .tag;
+}

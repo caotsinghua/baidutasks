@@ -1,0 +1,16 @@
+$itemsbackground:#ccc;
+$itembackground:#81E69E;
+$item-checked-background:#E418E6;
+.items{
+	background:$itemsbackground;
+	.item{
+		background:$itembackground;
+		text-align: center;
+		height: 50px;
+		line-height: 50px;
+		border: 1px solid #000;
+	}
+	.item-checked{
+		background:$item-checked-background;
+	}
+}

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>zishiying</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./css/materialize.min.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<style type="text/css">
+	nav .input-field{
+		margin-top: 1rem
+	}
+	nav .input-field .search-bar{
+		background: #fff;
+		border-radius:40px 40px;
+		color: #000;
+		height: 2.5rem;
+		padding: 0;
+	}
+	nav .input-field  .material-icons{
+		color: #ccc;
+		position: absolute;
+		top: -1rem;
+		font-size: 1.5rem;
+		margin-left: 1rem;
+	}
+	nav .input-field input{
+		padding: 0;
+		position: absolute;
+		top: 0;
+
+	}
+	nav p{
+		color: #000;
+	}
+	.user-img{
+		width: 74px;
+		height:74px;
+		border: 1px solid #ccc;
+		border-radius: 50%;
+		padding: 3.5px 0 0 3.5px;
+	}
+	.side-nav .userView a{
+		line-height: 20px;
+		padding: 0 33px;
+	}
+	.side-nav .userView .user-name{
+		padding: 0;
+		line-height: 74px;
+	}
+	.main-content nav{
+		height: 50px;
+		line-height: 50px;
+		font-size: 15px;
+	}
+	
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="nav-wrapper blue-grey ">
+				<div class="container">
+				<a href="#!" class="brand-logo"><i class="material-icons">dashboard</i>demo</a>
+				<a href="#!" class="button-collapse" data-activates="left-slide"><i class="material-icons">menu</i></a>
+					<div class="row">
+						
+
+						<div class="col s4 offset-s7 input-field hide-on-med-and-down">
+							<div class="search-bar">
+								<i class="material-icons prefix">search</i>
+					            <input type="text" id="search" class="validate">
+							</div>
+						</div>
+						
+							
+							<a class="white-text" href="#!">登录<i class="material-icons left">account_circle</i></a>
+					
+						
+						</div>
+					</div>
+					
+					
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<ul class="side-nav   blue-grey darken-3" id="left-slide">
+			<li>
+				<div class="userView">
+				<div class="row">
+					<div class="col s6">
+					<div class="user-img">
+						<img src="imgs/yuna.jpg" class="circle">
+					</div>
+					</div>
+					<div class="col s6">
+						<a href="#!" class="user-name white-text">ABC123</a>
+					</div>
+				</div>
+					
+					<div class="row">
+						<div class="col s6" style="border-right: 1px solid #4F718E">
+							<a href="#!" class="blue-grey-text"><span id="shoucang">110</span></a>
+							<a href="#!" class="blue-grey-text"><span>收藏</span></a>
+						</div>
+						<div class="col s6" >
+							<a href="#!" class="blue-grey-text"><span id="fans">313</span></a>
+							<a href="#!" class="blue-grey-text"><span>粉丝</span></a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="divider blue-grey"></div>
+			</li>
+			<ul class="collapsible collapsible-accordion" >
+				<li>
+				<a href="#!" class="collapsible-header waves-effect waves-teal blue-grey-text">
+					<i class="material-icons left">assignment</i>个人报表
+				</a>
+				<div class="collapsible-body">
+					<ul class="blue-grey">
+						<li><a href="#!">文件1</a></li>
+						<li><a href="#!">文件2</a></li>
+						<li><a href="#!">文件3</a></li>
+					</ul>
+				</div>
+
+				</li>
+				<li>
+				<a href="#!" class="collapsible-header waves-effect waves-teal blue-grey-text">
+					<i class="material-icons left">grade</i>个人收藏
+				</a>
+				<div class="collapsible-body">
+					<ul class="blue-grey">
+						<li><a href="#!">文件1</a></li>
+						<li><a href="#!">文件2</a></li>
+						<li><a href="#!">文件3</a></li>
+					</ul>
+				</div>
+				</li>
+				<li>
+				<a href="#!" class="collapsible-header waves-effect waves-teal blue-grey-text">
+					<i class="material-icons left">supervisor_account</i>我的分享
+				</a>
+				<div class="collapsible-body">
+					<ul class="blue-grey">
+						<li><a href="#!">文件1</a></li>
+						<li><a href="#!">文件2</a></li>
+						<li><a href="#!">文件3</a></li>
+					</ul>
+				</div>
+				</li>
+				<li>
+				<a href="#!" class="collapsible-header waves-effect waves-teal blue-grey-text">
+					<i class="material-icons left">theaters</i>图库
+				</a>
+				<div class="collapsible-body">
+					<ul class="blue-grey">
+						<li><a href="#!">文件1</a></li>
+						<li><a href="#!">文件2</a></li>
+						<li><a href="#!">文件3</a></li>
+					</ul>
+				</div>
+				</li>
+				<li>
+				<a href="#!" class="collapsible-header waves-effect waves-teal blue-grey-text">
+					<i class="material-icons left">timeline</i>成长记录
+				</a>
+				<div class="collapsible-body">
+					<ul class="blue-grey">
+						<li><a href="#!">文件1</a></li>
+						<li><a href="#!">文件2</a></li>
+						<li><a href="#!">文件3</a></li>
+					</ul>
+				</div>
+				</li>
+				<li>
+				<a href="#!" class="collapsible-header waves-effect waves-teal blue-grey-text">
+					<i class="material-icons left">assignment_turned_in</i>账户信息
+				</a>
+				<div class="collapsible-body">
+					<ul class="blue-grey">
+						<li><a href="#!">文件1</a></li>
+						<li><a href="#!">文件2</a></li>
+						<li><a href="#!">文件3</a></li>
+					</ul>
+				</div>
+				</li>
+			</ul>
+		</ul>
+		<div class="main-content">
+			<nav>
+			<div class="nav-wrapper blue-grey lighten-3">
+				<a href="#!" class="breadcrumb ">c站</a>
+				<a href="#!" class="breadcrumb ">个人报表</a>
+				<a href="#!" class="breadcrumb ">文件一</a>
+				<a href="#!" class="breadcrumb ">文档一</a>
+			</div>
+			</nav>
+			<div class="container">
+				<div class="row">
+					<div class="main-search"></div>
+				<div class="main-tongji"></div>
+				<div class="main-projects"></div>
+
+				<div class="main-calendar col s6">
+					<input type="date" class="datepicker">
+					
+				</div>
+				<div class="main-brandbang"></div>
+				</div>
+				
+				<br><br><br><br><br><br><br><br>
+				<br><br><br><br><br><br><br><br>
+				<br><br><br><br><br><br><br><br>
+				<br><br><br><br><br><br><br><br>
+			</div>
+		</div>
+		
+	</main>
+	<footer></footer>
+	<script type="text/javascript" src="../jQuery/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="./js/materialize.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$(".button-collapse").sideNav();
+		$(".collapsible").collapsible();
+		$('.datepicker').pickadate({
+		    selectMonths: true, // Creates a dropdown to control month
+		    selectYears: 16 // Creates a dropdown of 15 years to control year
+		  });
+	})
+	</script>
+</body>
+</html>

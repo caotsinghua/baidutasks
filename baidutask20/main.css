@@ -1,0 +1,12 @@
+.items {
+  background: #ccc; }
+  .items .item {
+    background: #81E69E;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #000; }
+  .items .item-checked {
+    background: #E418E6; }
+
+/*# sourceMappingURL=main.css.map */

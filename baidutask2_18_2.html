@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>baidutask paixu</title>
+	<style type="text/css">
+		.item{
+			width: 30px;
+			background: red;
+			display:inline-block;
+			position: absolute;
+			bottom: 0;
+			transition: 0.3s;
+
+		}
+		.content{
+			width: 800px;
+			height: 500px;
+			border: 1px solid #000;
+			margin: 0 auto;
+			position: relative;
+		}
+		.btn{
+			width: 60px;
+			height: 30px;
+			background: #32D4D9;
+			border-radius: 10px;
+			transition: 0.4s;
+			line-height: 30px;
+			text-align: center;
+			display: inline-block;
+		}
+		.btn:hover{
+			opacity: 0.5;
+			color: #fff;
+			cursor: pointer;
+			box-shadow: 2px 2px 2px #ccc;
+		}
+	</style>
+</head>
+<body>
+	<input type="text" placeholder="输入高度" id="input_id">
+	<div class="btn" id="insert_item">插入</div>
+	<div class="btn" id="sort">排序</div>
+	<h3 style="text-align: center;">数据展示</h3>
+	<div class="content" id="content"></div>
+	<script type="text/javascript">
+		var newitem;
+		var i=0;
+		var content=document.getElementById("content");
+		function createItem(height){
+			// height=Math.ceil(Math.random()*100);
+			newitem=document.createElement("div");
+			newitem.innerHTML=height;
+			newitem.style.height=height+'px';
+			newitem.style.left=40*i+"px";
+			newitem.className="item";
+			i++;
+			return newitem;
+		}
+		function resetItem(items){
+			for(var t=0;t<items.length;t++){
+				items[t].style.height=parseInt(items[t].innerHTML)+'px';
+				items[t].style.left=40*t+"px";
+			}
+		}
+		document.getElementById("insert_item").onclick=function(){
+			var h=Math.ceil(Math.random()*100);
+			// document.getElementById("input_id").value;
+			createItem(h);
+			content.appendChild(newitem);
+		}
+		document.getElementById("sort").onclick=function(){
+			var items=content.childNodes;
+			for(var p=0;p<items.length-1;p++){
+				for(var q=0;q<items.length-1-p;q++){
+					if(parseInt(items[q].innerHTML)>parseInt(items[q+1].innerHTML)){
+						var temp=items[q].innerHTML;
+						items[q].innerHTML=items[q+1].innerHTML;
+						items[q+1].innerHTML=temp;
+					}
+					resetItem(items);
+				}
+				
+			}
+		}
+		
+	</script>
+</body>
+</html>
